@@ -10,19 +10,27 @@
 
             <div class="space-x-4 mt-4 text-4xl ">
                 <span class="hover:opacity-75 transition-opacity duration-200">
-                    <i class="fa-brands fa-facebook" style="color: #1877F3;"></i>
+                    <a href="https://www.facebook.com/markjordan.javier" target="_blank" ">
+                        <i class="fa-brands fa-facebook" style="color: #1877F3;"></i>
+                    </a>
                 </span>
 
                 <span class="hover:opacity-75 transition-opacity duration-200">
-                    <i class="fa-brands fa-github pr-5" style="color: #181717;"></i>
+                    <a href="https://github.com/Jordaks" target="_blank">
+                        <i class="fa-brands fa-github pr-5" style="color: #181717;"></i>
+                    </a>
                 </span>
 
                 <span class="hover:opacity-75 transition-opacity duration-200">
-                    <i class="fa-brands fa-linkedin pr-5" style="color: #0A66C2;"></i>
+                    <a href="www.linkedin.com/in/mark-jordan-javier-29b72935a" target="_blank">
+                        <i class="fa-brands fa-linkedin pr-5" style="color: #0A66C2;"></i>
+                    </a>
                 </span>
                 
                 <span class="hover:opacity-75 transition-opacity duration-200">
-                    <i class="fa-brands fa-instagram text-4xl font-bold text-center m-[10px]" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> </i>
+                    <a href="https://www.instagram.com/imnot_dannnnn/" target="_blank">
+                        <i class="fa-brands fa-instagram text-4xl font-bold text-center m-[10px]" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> </i>
+                    </a>
                 </span>
             </div>
             

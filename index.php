@@ -1,8 +1,8 @@
 <?php include_once __DIR__ . '/components/header.php'; ?>
 
-
-    <main class="p-16 bg-gradient-to-r from-[#06141B] via-[#CCD0CF] to-[#CCD0CF] bg-opacity-10 min-h-screen relative">
-        <div class="mt-52 ml-40 p-6">
+    
+    <main class="relative z-10 p-16 min-h-screen">
+        <div class="mt-52 ml-36 p-6">
             <h1 class="text-5xl font-bold">Hi!</h1>
             <h2 class="text-2xl mt-2 font-semibold">I'm Jordan</h2>
             <p class="text-lg mt-1">A BS Information Technology student from</p>
@@ -22,7 +22,7 @@
                 </span>
 
                 <span class="hover:opacity-75 transition-opacity duration-200">
-                    <a href="www.linkedin.com/in/mark-jordan-javier-29b72935a" target="_blank">
+                    <a href="https://www.linkedin.com/in/mark-jordan-javier-29b72935a/" target="_blank">
                         <i class="fa-brands fa-linkedin pr-5" style="color: #0A66C2;"></i>
                     </a>
                 </span>
@@ -36,7 +36,6 @@
             
         </div>
 
-    
         <div class="absolute top-0 right-0 w-110 h-110 mt-36 mr-64  overflow-hidden rounded-full group">
             <img 
                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" 
@@ -47,16 +46,15 @@
 
     </main>
 
-    <section id="about" class="p-16 bg-gradient-to-r from-[#06141B] via-[#CCD0CF] to-[#CCD0CF] bg-opacity-10 min-h-screen relative">
+    <section id="about" class="p-16 bg-opacity-10 min-h-screen relative">
         <div class="mt-20 ml-40 p-6">
-            <h2 class="text-3xl font-bold">About Me</h2>
-            <p class="text-lg mt-2">I am a passionate and dedicated Information Technology student with a keen interest in web development, programming, and technology. I enjoy learning new skills and applying them to real-world projects.</p>
-            <p class="text-lg mt-2">I am currently pursuing my degree at Batangas State University - TNEU, where I am gaining valuable knowledge and experience in the field of IT.</p>
-            <p class="text-lg mt-2">In my free time, I love to explore new technologies, work on personal projects, and contribute to open-source communities. I am always eager to learn and grow in my field.</p>
+            <h2 class="text-3xl font-bold pb-5">About Me</h2>
+            <I class="text-xl mt-2">I am a passionate and dedicated Information Technology student with a keen interest in web development, programming, and technology. I enjoy learning new skills and applying them to real-world projects. I am currently pursuing my degree at Batangas State University - TNEU, where I am gaining valuable knowledge and experience in the field of IT.
+                In my free time, I love to explore new technologies, work on personal projects, and contribute to open-source communities. I am always eager to learn and grow in my field.</p>
         </div>
     </section>
 
-    <section id="projects" class="p-16 bg-gradient-to-r from-[#06141B] via-[#CCD0CF] to-[#CCD0CF] bg-opacity-10 min-h-screen relative">
+    <section id="projects" class="p-16 bg-opacity-10 min-h-screen relative">
         <div class="mt-20 ml-40 p-6">
             <h2 class="text-3xl font-bold">Projects</h2>
             <ul class="list-disc ml-6 mt-2">
@@ -66,7 +64,7 @@
         </div>
     </section>
 
-    <section id="certificates" class="p-16 bg-gradient-to-r from-[#06141B] via-[#CCD0CF] to-[#CCD0CF] bg-opacity-10 min-h-screen relative">
+    <section id="certificates" class="p-16 bg-opacity-10 min-h-screen relative">
         <div class="mt-20 ml-40 p-6">
             <h2 class="text-3xl font-bold">Certificates</h2>
             <p class="text-lg mt-2">Batangas Information Technology Society (BITS)</p>
@@ -81,3 +79,4 @@
 
     
 <?php include_once __DIR__ . '/components/footer.php'; ?>
+

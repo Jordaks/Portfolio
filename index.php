@@ -37,21 +37,43 @@
         </div>
 
         <div class="absolute top-0 right-0 w-110 h-110 mt-36 mr-64  overflow-hidden rounded-full group">
-            <img 
-                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" 
+            <img  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
                 src="/Portfolio/src/image/me.jpeg" 
-                alt="Me Image"
-            >
+                alt="Me Image">
         </div>
 
     </main>
 
     <section id="about" class="p-16 bg-opacity-10 min-h-screen relative">
-        <div class="mt-20 ml-40 p-6">
+        <div class="mt-20 ml-36 p-6">
+            
+
             <h2 class="text-3xl font-bold pb-5">About Me</h2>
-            <I class="text-xl mt-2">I am a passionate and dedicated Information Technology student with a keen interest in web development, programming, and technology. I enjoy learning new skills and applying them to real-world projects. I am currently pursuing my degree at Batangas State University - TNEU, where I am gaining valuable knowledge and experience in the field of IT.
-                In my free time, I love to explore new technologies, work on personal projects, and contribute to open-source communities. I am always eager to learn and grow in my field.</p>
+            <div class="flex items-start mt-8">
+                <img 
+                    src="/Portfolio/src/image/jordi.jpeg"
+                    alt="ME Image" class="w-96 h-96 object-cover z-20 rounded-3xl mr-8 transition-transform duration-300 group-hover:scale-105" >
+                <div>
+                    <I class="text-xl mt-2">
+                        I am a passionate and dedicated Information Technology student with a keen interest in web development, programming, and technology. I enjoy learning new skills and applying them to real-world projects. I am currently pursuing my degree at Batangas State University - TNEU, where I am gaining valuable knowledge and experience in the field of IT.
+                        In my free time, I love to explore new technologies, work on personal projects, and contribute to open-source communities. I am always eager to learn and grow in my field.
+                    </I>
+
+                    <h3 class="text-3xl font-bold pt-10 pb-5">Skills</h3>
+                    <ul class="list-disc ml-6 mt-2">
+                        
+                        <li class="text-lg">HTML, CSS, Tailwind</li>
+                        <li class="text-lg">PHP</li>
+                        <li class="text-lg">JavaScript</li>
+                        <li class="text-lg">MySQL</li>
+                        <li class="text-lg">Python</li>
+                        <li class="text-lg">Java</li>
+                        <li class="text-lg">C++</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        
     </section>
 
     <section id="projects" class="p-16 bg-opacity-10 min-h-screen relative">

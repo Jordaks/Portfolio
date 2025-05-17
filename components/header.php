@@ -29,6 +29,9 @@
         nav {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;        
         }
+        .mobile-menu{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;        
+        }
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;        
         }
@@ -58,10 +61,10 @@
                         <div class="hidden sm:ml-auto sm:block">
                             <div class="flex text-2xl font-bold space-x-4 justify-end">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="#" class="rounded-md hover:bg-gray-300 hover:text-black px-3 py-2 text-sm text-white" aria-current="page">ME</a>
-                                <a href="#about" class="rounded-md px-3 py-2 text-sm text-white hover:bg-gray-300 hover:text-black">ABOUT ME</a>
-                                <a href="#projects" class="rounded-md px-3 py-2 text-sm text-white hover:bg-gray-300 hover:text-black">PROJECTS</a>
-                                <a href="#certificates" class="rounded-md px-3 py-2 text-sm text-white hover:bg-gray-300 hover:text-black">CERTIFICATES</a>
+                                <a href="#" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white" aria-current="page">ME</a>
+                                <a href="#about" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200">ABOUT ME</a>
+                                <a href="#projects" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200">PROJECTS</a>
+                                <a href="#certificates" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200">CERTIFICATES</a>
                             </div>
                         </div>
                     </div>
@@ -73,10 +76,10 @@
             <div class="sm:hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pt-2 pb-3">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Me</a>
-                <a href="#about" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-black">About Me</a>
-                <a href="#projects" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-black">Projects</a>
-                <a href="#certificates" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-black">Certificates</a>
+                <a href="#" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white" aria-current="page">Me</a>
+                <a href="#about" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white">About Me</a>
+                <a href="#projects" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white">Projects</a>
+                <a href="#certificates" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white">Certificates</a>
                 </div>
             </div>
         </nav>

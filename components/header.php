@@ -10,38 +10,78 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <script src="https://kit.fontawesome.com/ce431fb7e5.js" crossorigin="anonymous"></script>
-    <!-- Load p5.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-
-    <!-- Your particle script -->
     <script src="/Portfolio/script/bg.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 
     <style>
         html {
             scroll-behavior: smooth;
         }
-        main {
-            font-family: 'Poppins', sans-serif;
-        }
-        
         nav {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;        
         }
         .mobile-menu{
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;        
         }
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;        
+        h1, h2 ,h3{
+        font-family: 'Raleway', sans-serif;
+        }
+        body, p {
+        font-family: 'Open Sans', sans-serif;
         }
         body {
             margin: 0;
             background: linear-gradient(to right, #4169e1, #add8e6); /* royal blue to light blue */
             color: white;
         }
+        .font-horizon {
+            font-family: 'Horizon', sans-serif;
+        }
         
-        
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+
+        @keyframes blink {
+        0%, 100% { border-color: transparent }
+        50% { border-color: white }
+        }
+
+        .typing {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid white;
+        animation:
+            typing 4s steps(40, end),
+            blink 0.75s step-end infinite;
+        }
+
+        @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
     </style>
     
 </head>

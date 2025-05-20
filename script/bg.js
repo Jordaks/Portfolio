@@ -8,7 +8,7 @@ function setup() {
 	canvas.style('top', '0');
 	canvas.style('left', '0');
 	clear();
-	for (let i = 0; i < 650; i++) {
+	for (let i = 0; i < 400; i++) {
 		particles.push({
 			pos: createVector(random(width), random(height)),
 			vel: createVector(0, 0),
@@ -64,3 +64,5 @@ function draw() {
 function windowResized() {
 	resizeCanvas(window.innerWidth, window.innerHeight);
 }
+
+

@@ -15,8 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hover-effect@1.1.0/dist/hover-effect.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init(); // Initialize AOS on page load
+    </script>
 
     <style>
         html {
@@ -36,7 +45,8 @@
         }
         body {
             margin: 0;
-            background: linear-gradient(to right, #4169e1, #add8e6); /* royal blue to light blue */
+            /* Sleek Monochrome - Charcoal #1e1e2f, Slate #2c3e50, White #ecf0f1*/
+            background: linear-gradient(to right, #1e1e2f, #2c3e50, #ecf0f1); /* Modern Cosmic - Midnight Blue #0f2027, Deep Purple #2c5364, Neon Aqua #00f2fe */
             color: white;
         }
         .font-horizon {
@@ -62,65 +72,88 @@
             blink 0.75s step-end infinite;
         }
 
-        @keyframes fadeInUp {
-        from {
+        @keyframes fadeInLeft {
+        0% {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateX(-40px);
         }
-        to {
+        100% {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateX(0);
         }
         }
 
-        .animate-fade-in-up {
-        animation: fadeInUp 0.8s ease-out forwards;
-        opacity: 0;
+        .fade-in-left {
+        animation: fadeInLeft 0.8s ease-out forwards;
+        opacity: 0; /* ensures initial state is hidden */
         }
 
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.4s; }
-        .delay-3 { animation-delay: 0.6s; }
-        .delay-4 { animation-delay: 0.8s; }
+        @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(40px); /* move from right */
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        }
+
+        .fade-in-right {
+        animation: fadeInRight 0.8s ease-out forwards;
+        opacity: 0; /* ensures initial state is hidden */
+        }
+
+        .icon {
+            transition: all 0.3s ease;
+        }
     </style>
     
 </head>
 
 <body >
     <header>
-        <nav class="backdrop-blur-md bg-opacity-10 text-white fixed top-0 w-full z-50 shadow-md">
-            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-16 items-center justify-between">
-                
-                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <!-- Logo 
-                        <div class="flex shrink-0 items-center">    
-                            <img class="h-8 w-auto" src="/Portfolio/src/image/icon.jpeg" alt="Me">
-                        </div>
-                        -->
-                        <div class="hidden sm:ml-auto sm:block">
-                            <div class="flex text-2xl font-bold space-x-4 justify-end">
-                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="#" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white" aria-current="page">ME</a>
-                                <a href="#about" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200">ABOUT ME</a>
-                                <a href="#projects" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200">PROJECTS</a>
-                                <a href="#certificates" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200">CERTIFICATES</a>
-                            </div>
-                        </div>
-                    </div>
-                
+        <nav class="backdrop-blur-xs text-white fixed top-0 w-full z-50 shadow-md">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+
+                <!-- Logo (optional) -->
+                <!--
+                <div class="flex-shrink-0">
+                    <img class="h-8 w-auto" src="/Portfolio/src/image/icon.jpeg" alt="Me">
+                </div>
+                -->
+
+                <!-- Desktop Menu -->
+                <div class="hidden sm:flex sm:items-center sm:space-x-6 text-2xl font-bold ml-auto">
+                    <a href="#" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black" aria-current="page">ME</a>
+                    <a href="#about" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">ABOUT ME</a>
+                    <a href="#projects" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">PROJECTS</a>
+                    <a href="#certificates" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">CERTIFICATES</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="sm:hidden ml-auto">
+                    <button id="menu-toggle" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-200 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <!-- Hamburger icon -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    </button>
+                </div>
                 </div>
             </div>
 
-            <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="sm:hidden" id="mobile-menu">
-                <div class="space-y-1 px-2 pt-2 pb-3">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white" aria-current="page">Me</a>
-                <a href="#about" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white">About Me</a>
-                <a href="#projects" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white">Projects</a>
-                <a href="#certificates" class="rounded-md hover:bg-blue-200  px-3 py-2 text-sm text-white">Certificates</a>
+            <!-- Mobile Menu (hidden by default) -->
+            <div class="sm:hidden hidden" id="mobile-menu">
+                <div class="space-y-1 px-4 pt-2 pb-4 bg-white/10 backdrop-blur-md">
+                <a href="#" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">ME</a>
+                <a href="#about" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">ABOUT ME</a>
+                <a href="#projects" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">PROJECTS</a>
+                <a href="#certificates" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">CERTIFICATES</a>
                 </div>
             </div>
         </nav>
+
     </header>

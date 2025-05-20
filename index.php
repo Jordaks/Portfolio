@@ -1,73 +1,5 @@
 <?php include_once __DIR__ . '/components/header.php'; ?>
 
-<!--
-<main class="relative z-10 px-6 py-16 min-h-screen sm:px-10 md:px-16 lg:px-12 xl:px-12 2xl:px-8 2xl:py-12 bg-gradient-to-br from-blue-100 to-white grid place-items-center">
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 2xl:gap-6 w-full max-w-screen-xl">
-
-            Profile Image - Mobile top-right 
-        <div class="order-1 md:order-2 flex justify-end md:justify-center w-full">
-        <div class="w-32 h-32 sm:w-52 sm:h-52 md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] 2xl:w-[36rem] 2xl:h-[36rem] overflow-hidden rounded-full group fade-in-right" style="animation-delay: 0.2s;">
-            <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            src="/Portfolio/src/image/me.jpeg"
-            alt="Me Image">
-        </div>
-        </div>
-
-        Intro Section 
-        <div class="order-2 md:order-1 p-4 sm:p-6">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold fade-in-left">Hi!</h1>
-
-        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl mt-2 font-semibold fade-in-left" style="animation-delay: 0.2s;">
-            <span class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">I'm</span>
-            <span class="text-[#0938c5] font-poppins font-bold ml-2">Jordan</span>
-        </h2>
-
-        <p class="text-base sm:text-lg lg:text-xl 2xl:text-2xl mt-2 fade-in-left" style="animation-delay: 0.4s;">
-            A BS Information Technology student from
-        </p>
-        <p class="text-base sm:text-lg lg:text-xl 2xl:text-2xl mt-1 fade-in-left" style="animation-delay: 0.6s;">
-            Batangas State University - TNEU.
-        </p>
-
-        <p class="text-sm lg:text-base 2xl:text-lg mt-3 fade-in-left italic" style="animation-delay: 1.2s;">
-            "Success begins with a great mindset—chase your goals, stay focused, and never give up."
-        </p>
-
-        CTA Button 
-        <div class="mt-6 fade-in-left" style="animation-delay: 1.4s;">
-            <a href="/Portfolio/src/RESUME.pdf" download
-            class="inline-flex items-center gap-2 bg-white text-blue-700 px-6 py-2 rounded-full text-sm sm:text-base font-semibold hover:bg-blue-800 hover:text-white transition duration-300 shadow-lg hover:shadow-xl">
-            <svg class="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                d="M128.14 263.5a7.5 7.5 0 1 0 7.5 7.5 7.5 7.5 0 0 0-7.5-7.5Zm0 135a7.5 7.5 0 1 0 7.5 7.5 7.5 7.5 0 0 0-7.5-7.5Zm0-90a7.5 7.5 0 1 0 7.5 7.5 7.5 7.5 0 0 0-7.5-7.5Zm0 135a7.5 7.5 0 1 0 7.5 7.5 7.5 7.5 0 0 0-7.5-7.5Zm134.38-241.24v-5.63A47.44 47.44 0 0 0 224 150.07l-9.25-1.76a42.62 42.62 0 0 0 15.79-33.12v-22.4a20.14 20.14 0 0 0-4.16-12.25 18.52 18.52 0 0 0 4.16-11.71V50.9a7.5 7.5 0 0 0-7.5-7.5H163.8c-11 0-18.67 10.68-18.67 20.27v27.49a6.84 6.84 0 0 0 .05.79c0 .28-.05.56-.05.84v22.4a42.62 42.62 0 0 0 15.79 33.12l-9.25 1.76a47.44 47.44 0 0 0-38.53 46.56v5.63a29 29 0 0 0 29 29h91.38a29 29 0 0 0 29-29ZM160.13 63.67c0-2.49 2.19-5.27 3.67-5.27h51.73v10.43a3.68 3.68 0 0 1-3.67 3.67 6.85 6.85 0 0 0-.79 0h-45.64a20.23 20.23 0 0 0-5.3.72Zm0 51.52v-22.4a5.3 5.3 0 0 1 5.3-5.29h44.8a5.3 5.3 0 0 1 5.3 5.29v22.4a27.7 27.7 0 1 1-55.4 0Zm34.92 42.08v2.1a7.22 7.22 0 1 1-14.44 0v-2.1a42.35 42.35 0 0 0 14.44 0Zm-66.91 45v-5.63a32.44 32.44 0 0 1 26.33-31.83l11.38-2.16a22.22 22.22 0 0 0 44 0l11.38 2.16a32.44 32.44 0 0 1 26.33 31.83v5.63a14 14 0 0 1-14 14h-91.42a14 14 0 0 1-14-14.01Zm0 151.24a7.5 7.5 0 1 0 7.5 7.5 7.5 7.5 0 0 0-7.5-7.51Zm263.22-137.24H291.7a7.5 7.5 0 0 0 0 15h99.66a7.5 7.5 0 0 0 0-15Zm0-30H291.7a7.5 7.5 0 0 0 0 15h99.66a7.5 7.5 0 0 0 0-15Zm0-141.27H291.7a7.5 7.5 0 0 0 0 15h99.66a7.5 7.5 0 0 0 0-15ZM291.7 90h54.66a7.5 7.5 0 0 0 0-15H291.7a7.5 7.5 0 0 0 0 15ZM406.36 0H105.64a37.54 37.54 0 0 0-37.5 37.5v437a37.54 37.54 0 0 0 37.5 37.5h300.72a37.54 37.54 0 0 0 37.5-37.5v-437A37.54 37.54 0 0 0 406.36 0Zm22.5 474.5a22.52 22.52 0 0 1-22.5 22.5H105.64a22.52 22.52 0 0 1-22.5-22.5v-437a22.52 22.52 0 0 1 22.5-22.5h300.72a22.52 22.52 0 0 1 22.5 22.5Zm-37.5-76H167.72a7.5 7.5 0 0 0 0 15h223.64a7.5 7.5 0 0 0 0-15Zm0 45H167.72a7.5 7.5 0 0 0 0 15h223.64a7.5 7.5 0 0 0 0-15Zm0-180H167.72a7.5 7.5 0 0 0 0 15h223.64a7.5 7.5 0 0 0 0-15Zm0 90H167.72a7.5 7.5 0 0 0 0 15h223.64a7.5 7.5 0 0 0 0-15Zm0-45H167.72a7.5 7.5 0 0 0 0 15h223.64a7.5 7.5 0 0 0 0-15Z">
-                </path>
-            </svg>
-            Download Resume
-            </a>
-        </div>
-
-        Social Icons    
-        <div class="flex flex-wrap sm:flex-nowrap gap-4 mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl fade-in-left" style="animation-delay: 1.6s;">
-            <a href="https://www.facebook.com/markjordan.javier" target="_blank" class="hover:opacity-75 transition duration-200">
-            <i class="fa-brands fa-facebook hover:scale-110 transition-transform mx-[10px]" style="color: #1877F3;"></i>
-            </a>
-            <a href="https://github.com/Jordaks" target="_blank" class="hover:opacity-75 transition duration-200">
-            <i class="fa-brands fa-github hover:scale-110 transition-transform mx-[10px]" style="color: #181717;"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mark-jordan-javier-29b72935a/" target="_blank" class="hover:opacity-75 transition duration-200">
-            <i class="fa-brands fa-linkedin hover:scale-110 transition-transform mx-[10px]" style="color: #0A66C2;"></i>
-            </a>
-            <a href="https://www.instagram.com/imnot_dannnnn/" target="_blank" class="hover:opacity-75 transition duration-200">
-            <i class="fa-brands fa-instagram hover:scale-110 transition-transform mx-[10px] text-transparent bg-clip-text"
-                style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
-            </a>
-        </div>
-        </div>
-
-    </div>
-    </main>
--->
-
 <section class="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#00f2fe] text-white flex items-center justify-center px-6">
     <div class="flex flex-col-reverse md:flex-row items-center gap-10 max-w-6xl w-full">
 
@@ -122,6 +54,8 @@
         </div>
     </div>
 </section>
+
+<!-- About Section 
 
 <section id="about" class="py-44 px-4 md:px-20 bg-opacity-10 min-h-screen relative">
         <div class="px-6">
@@ -249,7 +183,7 @@
             </ul>
         </div>
     </section>
-
+-->
     
 <?php include_once __DIR__ . '/components/footer.php'; ?>
 

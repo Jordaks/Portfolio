@@ -25,6 +25,7 @@
 
     <script>
         AOS.init(); // Initialize AOS on page load
+        
     </script>
 
     <style>
@@ -107,53 +108,66 @@
         .icon {
             transition: all 0.3s ease;
         }
+        
     </style>
     
 </head>
 
 <body >
     <header>
-        <nav class="backdrop-blur-xs text-white fixed top-0 w-full z-50 shadow-md">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
-
-                <!-- Logo (optional) -->
-                <!--
-                <div class="flex-shrink-0">
-                    <img class="h-8 w-auto" src="/Portfolio/src/image/icon.jpeg" alt="Me">
+            <nav class="backdrop-blur-xs text-white fixed top-0 w-full z-50 shadow-md">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="flex h-16 items-center justify-between">
+                    <!-- Desktop Menu -->
+                        <div class="hidden sm:flex sm:items-center sm:space-x-6 text-2xl font-bold ml-auto">
+                            <a href="#" class="px-3 py-2 text-sm relative group">
+                                <span class="text-white group-hover:text-blue-300 transition duration-300">ME</span>
+                                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                            <a href="#about" class="px-3 py-2 text-sm relative group">
+                                <span class="text-white group-hover:text-blue-300 transition duration-300">ABOUT ME</span>
+                                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                            <a href="#projects" class="px-3 py-2 text-sm relative group">
+                                <span class="text-white group-hover:text-blue-300 transition duration-300">PROJECTS</span>
+                                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                            <a href="#certificates" class="px-3 py-2 text-sm relative group">
+                                <span class="text-white group-hover:text-blue-300 transition duration-300">CERTIFICATES</span>
+                                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                        </div>
+                        <!-- Hamburger Menu Button (Mobile only) -->
+                        <button class="sm:hidden focus:outline-none fill-white hover:fill-blue-300 transition duration-300" onclick="toggleMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" baseProfile="tiny" version="1.2" viewBox="0 0 24 24" id="menu">
+                            <path d="M8 3H6a2.99 2.99 0 0 0-2.119.881A2.99 2.99 0 0 0 3 6v2c0 .825.337 1.575.881 2.119A2.99 2.99 0 0 0 6 11h2a2.99 2.99 0 0 0 2.119-.881A2.99 2.99 0 0 0 11 8V6a2.99 2.99 0 0 0-.881-2.119A2.99 2.99 0 0 0 8 3zm10 0h-2a2.99 2.99 0 0 0-2.119.881A2.99 2.99 0 0 0 13 6v2c0 .825.337 1.575.881 2.119A2.99 2.99 0 0 0 16 11h2a2.99 2.99 0 0 0 2.119-.881A2.99 2.99 0 0 0 21 8V6a2.99 2.99 0 0 0-.881-2.119A2.99 2.99 0 0 0 18 3zM8 13H6a2.99 2.99 0 0 0-2.119.881A2.99 2.99 0 0 0 3 16v2c0 .825.337 1.575.881 2.119A2.99 2.99 0 0 0 6 21h2a2.99 2.99 0 0 0 2.119-.881A2.99 2.99 0 0 0 11 18v-2a2.99 2.99 0 0 0-.881-2.119A2.99 2.99 0 0 0 8 13zm10 0h-2a2.99 2.99 0 0 0-2.119.881A2.99 2.99 0 0 0 13 16v2c0 .825.337 1.575.881 2.119A2.99 2.99 0 0 0 16 21h2a2.99 2.99 0 0 0 2.119-.881A2.99 2.99 0 0 0 21 18v-2a2.99 2.99 0 0 0-.881-2.119A2.99 2.99 0 0 0 18 13z"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                -->
 
-                <!-- Desktop Menu -->
-                <div class="hidden sm:flex sm:items-center sm:space-x-6 text-2xl font-bold ml-auto">
-                    <a href="#" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black" aria-current="page">ME</a>
-                    <a href="#about" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">ABOUT ME</a>
-                    <a href="#projects" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">PROJECTS</a>
-                    <a href="#certificates" class="rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">CERTIFICATES</a>
+                
+                <!-- Mobile Menu (always visible, fixed at bottom) -->
+                <div id="mobileMenu" class="hidden sm:hidden backdrop-blur-md px-4 py-4">
+                    <a href="#" class="text-white text-sm relative -5 group">
+                    <span class="group-hover:text-blue-300 transition duration-300 ">ME</span>
+                    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <br>
+                    <a href="#about" class="text-white text-sm relative group">
+                    <span class="group-hover:text-blue-300 transition duration-300">ABOUT</span>
+                    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <br>
+                    <a href="#projects" class="text-white text-sm relative group">
+                    <span class="group-hover:text-blue-300 transition duration-300">PROJECTS</span>
+                    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <br>
+                    <a href="#certificates" class="text-white text-sm relative group">
+                    <span class="group-hover:text-blue-300 transition duration-300">CERTS</span>
+                    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
+                    </a>
                 </div>
-
-                <!-- Mobile menu button -->
-                <div class="sm:hidden ml-auto">
-                    <button id="menu-toggle" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-200 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                    <!-- Hamburger icon -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    </button>
-                </div>
-                </div>
-            </div>
-
-            <!-- Mobile Menu (hidden by default) -->
-            <div class="sm:hidden hidden" id="mobile-menu">
-                <div class="space-y-1 px-4 pt-2 pb-4 bg-white/10 backdrop-blur-md">
-                <a href="#" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">ME</a>
-                <a href="#about" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">ABOUT ME</a>
-                <a href="#projects" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">PROJECTS</a>
-                <a href="#certificates" class="block rounded-md px-3 py-2 text-sm text-white hover:bg-blue-200 hover:text-black">CERTIFICATES</a>
-                </div>
-            </div>
-        </nav>
-
+            </nav>
     </header>

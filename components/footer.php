@@ -1,4 +1,4 @@
-    <footer class="text-white bg-cyan-900">
+    <footer class="text-white bg-blue-300">
         <div class=" text-center py-4">
             &copy; <?php echo date("Y"); ?> Mark Jordan. All rights reserved.
         </div>
@@ -23,6 +23,7 @@
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
         }
+        
     </script>
 
 </body>

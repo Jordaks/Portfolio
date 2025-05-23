@@ -25,10 +25,10 @@
 
     <script>
         AOS.init(); // Initialize AOS on page load
-        
     </script>
 
     <style>
+        
         html {
             scroll-behavior: smooth;
         }
@@ -47,7 +47,7 @@
         body {
             margin: 0;
             /* Sleek Monochrome - Charcoal #1e1e2f, Slate #2c3e50, White #ecf0f1*/
-            background: linear-gradient(to right, #1e1e2f, #2c3e50, #ecf0f1); /* Modern Cosmic - Midnight Blue #0f2027, Deep Purple #2c5364, Neon Aqua #00f2fe */
+            /*background: linear-gradient(to right, #1e1e2f, #2c3e50, #ecf0f1);  Modern Cosmic - Midnight Blue #0f2027, Deep Purple #2c5364, Neon Aqua #00f2fe */
             color: white;
         }
         .font-horizon {
@@ -109,31 +109,32 @@
             transition: all 0.3s ease;
         }
         
+        
     </style>
     
 </head>
 
-<body >
+<body class="bg-slate-200">
     <header>
-            <nav class="backdrop-blur-xs text-white fixed top-0 w-full z-50 shadow-md">
+            <nav class="bg-slate-200 text-white fixed top-0 w-full z-50 shadow-md">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="flex h-16 items-center justify-between">
                     <!-- Desktop Menu -->
                         <div class="hidden sm:flex sm:items-center sm:space-x-6 text-2xl font-bold ml-auto">
-                            <a href="#" class="px-3 py-2 text-sm relative group">
-                                <span class="text-white group-hover:text-blue-300 transition duration-300">ME</span>
+                            <a href="/Portfolio/index.php" class="px-3 py-2 text-sm relative group">
+                                <span class="text-gray-600 group-hover:text-blue-300 transition duration-300">ME</span>
                                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
                             </a>
                             <a href="#about" class="px-3 py-2 text-sm relative group">
-                                <span class="text-white group-hover:text-blue-300 transition duration-300">ABOUT ME</span>
+                                <span class="text-gray-600 group-hover:text-blue-300 transition duration-300">ABOUT ME</span>
                                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
                             </a>
                             <a href="#projects" class="px-3 py-2 text-sm relative group">
-                                <span class="text-white group-hover:text-blue-300 transition duration-300">PROJECTS</span>
+                                <span class="text-gray-600 group-hover:text-blue-300 transition duration-300">PROJECTS</span>
                                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
                             </a>
                             <a href="#certificates" class="px-3 py-2 text-sm relative group">
-                                <span class="text-white group-hover:text-blue-300 transition duration-300">CERTIFICATES</span>
+                                <span class="text-gray-600 group-hover:text-blue-300 transition duration-300">CERTIFICATES</span>
                                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>
                             </a>
                         </div>
@@ -148,7 +149,7 @@
 
                 
                 <!-- Mobile Menu (always visible, fixed at bottom) -->
-                <div id="mobileMenu" class="hidden sm:hidden backdrop-blur-md px-4 py-4">
+                <div id="mobileMenu" class="hidden sm:hidden backdrop-blur-xs px-4 py-4">
                     <a href="#" class="text-white text-sm relative -5 group">
                     <span class="group-hover:text-blue-300 transition duration-300 ">ME</span>
                     <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-300 group-hover:w-full transition-all duration-300"></span>

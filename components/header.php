@@ -116,7 +116,7 @@
 
 <body class="bg-slate-200">
     <header>
-            <nav class="bg-slate-200 text-white fixed top-0 w-full z-50 shadow-md">
+            <nav class="backdrop-blur-md text-white fixed top-0 w-full z-50 shadow-md">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="flex h-16 items-center justify-between">
                     <!-- Desktop Menu -->

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link rel="icon" type="image/jpeg" href="src/image/icon.jpeg" />
+    <link rel="icon" type="image/jpeg" href="src/image/icon.png" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>

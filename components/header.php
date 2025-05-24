@@ -99,7 +99,7 @@
 <body class="min-h-screen bg-slate-200 text-white">
     
     <!-- Navigation -->
-    <nav class="backdrop-blur-md fixed top-0 w-full z-50 shadow-2xl">
+    <nav class="backdrop-blur-md fixed top-0 w-full z-50 shadow-2xl " data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo/Brand -->

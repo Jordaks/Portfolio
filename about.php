@@ -195,18 +195,20 @@
                 <!-- Project Card 1 -->
                 <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative overflow-hidden h-48">
-                        <img src="https://via.placeholder.com/300x200" alt="Portfolio Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 w-full flex justify-between items-center">
-                                <div class="flex gap-2">
-                                    <a href="#" class="text-white hover:text-blue-300 transition-colors">
-                                        <i class="fa-brands fa-github "></i>
-                                    </a>
-                                    <a href="#" class="text-white hover:text-blue-300 transition-colors">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
+                        <div class="slider-container overflow-hidden relative">
+                            <div class="slider">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/portfolio1.png" alt="Web Portfolio 1" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/portfolio2.png" alt="Web Portfolio 2" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/portfolio3.png" alt="Web Portfolio 3" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/portfolio4.png" alt="Web Portfolio 4" class="slide w-full h-48 object-cover">
                             </div>
+                            <button class="slider-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
+                                <i class="fa-solid fa-chevron-left text-xs"></i>
+                            </button>
+                            <button class="slider-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </button>
+                            <div class="slider-nav"></div>
                         </div>
                     </div>
                     <div class="p-6">
@@ -223,19 +225,19 @@
                 <!-- Project Card 2 with Slider -->
                 <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative overflow-hidden h-48">
-                        <div class="slider-container">
-                            <div class="slider" id="project-slider">
-                                <img src="/Portfolio/src/image/TSS1.jpeg" alt="Time Scheduling System 1" class="slide w-full h-48 object-cover">
-                                <img src="/Portfolio/src/image/TSS2.jpeg" alt="Time Scheduling System 2" class="slide w-full h-48 object-cover">
-                                <img src="/Portfolio/src/image/TSS3.jpeg" alt="Time Scheduling System 3" class="slide w-full h-48 object-cover">
+                        <div class="slider-container overflow-hidden relative">
+                            <div class="slider">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/TSS1.jpeg" alt="Time Scheduling System 1" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/TSS2.jpeg" alt="Time Scheduling System 2" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/TSS3.jpeg" alt="Time Scheduling System 3" class="slide w-full h-48 object-cover">
                             </div>
-                            <button onclick="moveSlide(-1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
+                            <button class="slider-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
                                 <i class="fa-solid fa-chevron-left text-xs"></i>
                             </button>
-                            <button onclick="moveSlide(1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
+                            <button class="slider-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
                                 <i class="fa-solid fa-chevron-right text-xs"></i>
                             </button>
-                            <div class="slider-nav" id="slider-nav"></div>
+                            <div class="slider-nav"></div>
                         </div>
                     </div>
                     <div class="p-6">
@@ -249,21 +251,30 @@
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
+                <!-- Updated Project Card 3 with proper classes -->
                 <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-300" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative overflow-hidden h-48">
-                        <img src="https://via.placeholder.com/300x200" alt="Online Thrift Shop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 w-full flex justify-between items-center">
-                                <div class="flex gap-2">
-                                    <a href="#" class="text-white hover:text-emerald-300 transition-colors">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="#" class="text-white hover:text-emerald-300 transition-colors">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
+                        <div class="slider-container overflow-hidden relative">
+                            <div class="slider">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img1.png" alt="Thrift Shop 1" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img2.png" alt="Thrift Shop 2" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img3.png" alt="Thrift Shop 3" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img4.png" alt="Thrift Shop 4" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img5.png" alt="Thrift Shop 5" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img6.png" alt="Thrift Shop 6" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img7.png" alt="Thrift Shop 7" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img8.png" alt="Thrift Shop 8" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img9.png" alt="Thrift Shop 9" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img10.png" alt="Thrift Shop 10" class="slide w-full h-48 object-cover">
+                                <img onclick="openModal(this.src)" src="/Portfolio/src/image/thriftUI/img11.png" alt="Thrift Shop 11" class="slide w-full h-48 object-cover">
                             </div>
+                            <button class="slider-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
+                                <i class="fa-solid fa-chevron-left text-xs"></i>
+                            </button>
+                            <button class="slider-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors">
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </button>
+                            <div class="slider-nav"></div>
                         </div>
                     </div>
                     <div class="p-6">
@@ -276,7 +287,6 @@
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">MySQL</span>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -350,49 +360,35 @@
             once: true
         });
 
-        // Slider functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const slider = document.getElementById('project-slider');
-        const sliderNav = document.getElementById('slider-nav');
-        
-        // Create slider dots
-        for (let i = 0; i < slides.length; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('slider-dot');
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(i));
-            sliderNav.appendChild(dot);
-        }
-        
-        function moveSlide(direction) {
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            updateSlider();
-        }
-        
-        function goToSlide(index) {
-            currentSlide = index;
-            updateSlider();
-        }
-        
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
-            // Update dots
-            const dots = document.querySelectorAll('.slider-dot');
-            dots.forEach((dot, index) => {
-                if (index === currentSlide) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
-            });
-        }
-        
-        // Auto slide
-        setInterval(() => {
-            moveSlide(1);
-        }, 5000);
+document.addEventListener('DOMContentLoaded', () => {
+        const sliders = document.querySelectorAll('.slider-container');
+
+        sliders.forEach(container => {
+            const slider = container.querySelector('.slider');
+            const slides = container.querySelectorAll('.slide');
+            const prevBtn = container.querySelector('.slider-prev');
+            const nextBtn = container.querySelector('.slider-next');
+
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                slider.style.transform = `translateX(-${index * 100}%)`;
+                currentIndex = index;
+            }
+
+            // Set initial styles
+            slider.style.display = 'flex';
+            slider.style.transition = 'transform 0.5s ease-in-out';
+            slides.forEach(slide => slide.style.flex = '0 0 100%');
+
+            prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+            nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+
+            showSlide(0); // initialize
+        });
+    });
         
         // Intersection Observer for fade-in sections
         const sections = document.querySelectorAll('.section-fade');

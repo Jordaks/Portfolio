@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ce431fb7e5.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/jpeg" href="src/image/icon.jpeg" />
-
-  <title>Jordan - Portfolio</title>
+  <title>Portfolio</title>
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>

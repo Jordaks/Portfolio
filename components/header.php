@@ -6,7 +6,7 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="src/image/icon.jpeg" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Me</title>
+    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <script src="https://kit.fontawesome.com/ce431fb7e5.js" crossorigin="anonymous"></script>

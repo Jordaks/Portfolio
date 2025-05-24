@@ -367,7 +367,7 @@
       <!-- Resume Download Button -->
       <div class="fade-up-element">
         <a href="/Portfolio/src/RESUME.pdf" download 
-           class="resume-btn btn-smooth inline-block font-semibold py-3 px-6 rounded-full shadow-lg mb-4 text-blue-300 relative z-10">
+            class="resume-btn btn-smooth inline-block font-semibold py-3 px-6 rounded-full shadow-lg text-blue-300 relative z-10">
           📄 Download Resume
         </a>
       </div>
@@ -375,15 +375,15 @@
       <!-- Social Media Icons -->
       <div class="fade-up-element flex gap-8 text-4xl m-4">
         <a href="https://www.facebook.com/markjordan.javier" target="_blank" 
-           class="social-element social-icon facebook" tabindex="0">
+            class="social-element social-icon facebook" tabindex="0">
           <i class="fab fa-facebook"></i>
         </a>
         <a href="https://github.com/Jordaks" target="_blank" 
-           class="social-element social-icon github" tabindex="0">
+            class="social-element social-icon github" tabindex="0">
           <i class="fab fa-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/mark-jordan-javier-29b72935a/" target="_blank" 
-           class="social-element social-icon linkedin" tabindex="0">
+            class="social-element social-icon linkedin" tabindex="0">
           <i class="fab fa-linkedin"></i>
         </a>
         <a href="https://www.instagram.com/imnot_dannnnn/" target="_blank"

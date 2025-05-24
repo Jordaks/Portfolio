@@ -54,6 +54,8 @@
       object-fit: cover;
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
       border: 4px solid rgba(255, 255, 255, 0.7);
+      padding: 2px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -63,11 +65,8 @@
   <main class="relative min-h-screen w-full overflow-hidden">
     <div class="relative z-10 flex min-h-screen flex-col items-center justify-center p-6 text-gray-800">
       <!-- Profile Picture -->
-      <div class="mb-8 overflow-hidden">
-        <img src="/Portfolio/src/image/me.jpeg" alt="Jordan"
-              class="profile-img w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 transition-all duration-300 hover:scale-105"
-              loading="lazy">
-      </div>
+          <img src="/Portfolio/src/image/me.jpeg" alt="Jordan"  class="profile-img shadow-2xl w-52 h-52 sm:w-52 sm:h-52 md:w-52 md:h-52 lg:w-52 lg:h-52 xl:w-64 xl:h-64 transition-all duration-300 hover:scale-105"
+        loading="lazy">
       
       <h1 class="mb-4 text-4xl font-light tracking-tight sm:text-5xl md:text-6xl">Hi! I'm <span class="text-blue-300">Jordan</span></h1>
       <p class="text-xl font-light opacity-80">A BS Information Technology student from Batangas State University - TNEU.</p>

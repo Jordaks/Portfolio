@@ -1,5 +1,5 @@
     <footer class="text-white bg-blue-300">
-        <div class=" text-center py-4">
+        <div class=" text-center py-2">
             &copy; <?php echo date("Y"); ?> Mark Jordan. All rights reserved.
         </div>
     </footer>
